@@ -1,0 +1,7 @@
+node_modules/
+.DC_Store
+.cache/
+dist/
+coverage/
+.vscode/
+.env

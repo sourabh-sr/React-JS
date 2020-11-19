@@ -1,14 +1,7 @@
-/** This is bring in props */
-
-// const Wizard = (props) => {
-//     return React.createElement("div", {}, [
-//         React.createElement("h1", {}, props.name),
-//         React.createElement("h2", {}, props.wand),
-//         React.createElement("h2", {}, props.power)
-//     ])
-// }
-
-/**This is Destructuring of Props */
+import react from "react";
+import {
+  render
+} from "react-dom";
 
 const Wizard = ({
   name,

@@ -10,7 +10,11 @@
 
 /**This is Destructuring of Props */
 
-const Wizard = ({name, wand, power}) => {
+const Wizard = ({
+    name,
+    wand,
+    power
+}) => {
     return React.createElement("div", {}, [
         React.createElement("h1", {}, name),
         React.createElement("h2", {}, wand),
@@ -19,12 +23,26 @@ const Wizard = ({name, wand, power}) => {
 }
 
 const App = () => {
-    return React.createElement("div", {id: 'attributes'},
-        React.createElement("h2",{},"Welcome to Hogwards"),
-        React.createElement(Wizard, {name: "HarryPotter", wand: "Phoneix feather", power: "Love"}),
-        React.createElement(Wizard, {name: "Voldemort", wand: "Phoneix featther(Brother)", power: "Ambition"}),
-        React.createElement(Wizard, {name: "Dumbeldore", wand: "Elder Wand", power: "Knowledge"})
-   )
+    return React.createElement("div", {
+            id: 'attributes'
+        },
+        React.createElement("h2", {}, "Welcome to Hogwards"),
+        React.createElement(Wizard, {
+            name: "HarryPotter",
+            wand: "Phoneix feather",
+            power: "Love"
+        }),
+        React.createElement(Wizard, {
+            name: "Voldemort",
+            wand: "Phoneix featther(Brother)",
+            power: "Ambition"
+        }),
+        React.createElement(Wizard, {
+            name: "Dumbeldore",
+            wand: "Elder Wand",
+            power: "Knowledge"
+        })
+    )
 }
 
-ReactDOM.render(React.createElement(App),document.getElementById("root"));
+ReactDOM.render(React.createElement(App), document.getElementById("root"));

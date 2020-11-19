@@ -1,16 +1,25 @@
 {
-  "name": "reactexamples",
+  "name": "React-Js-FM",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "sourabh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourabh-sr/React-Js-FM.git"
+  },
+  "keywords": [],
+  "author": "Sourabh",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourabh-sr/React-Js-FM/issues"
+  },
+  "homepage": "https://github.com/sourabh-sr/React-Js-FM#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
